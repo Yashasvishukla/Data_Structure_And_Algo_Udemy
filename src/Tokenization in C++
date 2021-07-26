@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main()
+{
+
+  string input;
+  getline(cin, input);
+  
+  // Create an object of stringstream
+  
+  stringstream ss(input);
+  
+  string token;
+  vector<string> tokens;
+  
+  while(getline(ss,token,' '))
+  {
+    tokens.push_back(token);
+  }
+
+	for(auto token: tokens)
+	{
+		cout << token << endl;
+	}
+
+  return 0;
+}
