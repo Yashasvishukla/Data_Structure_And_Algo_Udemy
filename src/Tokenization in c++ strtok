@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main()
+{
+
+  char input[10000];
+  cin.getline(input,1000);
+  
+  // using strtok()
+
+  vector<char*> tokens;
+  char *token = strtok(input," ");
+  tokens.push_back(token);
+
+  while(token != NULL)
+  {
+	  token = strtok(NULL," ");
+	  tokens.push_back(token);
+  }
+
+	for(auto token : tokens)
+	{
+		cout << token << endl;
+	}
+  return 0;
+}
